@@ -1,7 +1,9 @@
 :root{
     --white-color: #fff;
     --black-color: #000;
+    --primary-color: #ff4d00;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 
 *{
@@ -29,4 +31,76 @@ html{
 .grit__row{
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Button style */
+.btn{
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disable{
+    color: #ccc;
+    cursor: default;
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);  
+}
+
+.modal__body{
+    
+    background: var(--white-color);
+    margin: auto;
+    position: relative;
+    z-index: 100;
+    border-radius: 10px;
 }
