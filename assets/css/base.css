@@ -4,6 +4,10 @@
     --primary-color: #ff4d00;
     --text-color: #333;
     --border-color: #dbdbdb;
+
+    --headr-height: 120px;
+    --narbar-height: 34px;
+    --header-with-search-height: calc(var(--headr-height) - var(--narbar-height));
 }
 
 *{
@@ -18,17 +22,21 @@ html{
     box-sizing: border-box;
 }
 
-.grit{
+.dis_none{
+    display: none;
+}
+
+.grid {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.grit__full-width{
-    width:100%;
+.grid__full-width{
+    width: 100%;
 }
 
-.grit__row{
+.grid__row{
     display: flex;
     flex-wrap: wrap;
 }
@@ -61,32 +69,34 @@ html{
     background-color: gray;
 }
 
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-form));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* modal */
+/* Modal */
 .modal{
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
+    display: none;
+    animation: fadeIn linear 0.2s;
 }
 
 .modal__overlay{
@@ -96,11 +106,13 @@ html{
     background: rgba(0, 0, 0, 0.3);  
 }
 
-.modal__body{
-    
+.modal__body{  
+    --growth-form: 0.6;
+    --growth-to: 1;
     background: var(--white-color);
     margin: auto;
     position: relative;
     z-index: 100;
     border-radius: 10px;
+    animation: growth linear 0.2s;
 }
