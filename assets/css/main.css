@@ -165,6 +165,79 @@
     cursor: pointer;
 }
 
+/* Slide */
+.main{
+    background-position: center;
+    background-image:url('./ảnh shop/back9.png') ;
+    height: 400px;
+}
+.slide{
+    width: 900px;
+    margin: 0 auto;
+    height: 600px;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.chuyen-slide{
+    width: 9999px;
+    transition: all 1.5s;
+}
+.chuyen-slide img{
+    width: 900px;
+    height: 400px;
+    float: left;
+}
+.dieuhuong {
+    position:absolute;
+    padding-left: 0px;
+    top: 30%;
+    display: none;
+    font-size: 60px;
+    color: #eee;
+    opacity: 0.5;
+    border:#eee;
+}
+.slide:hover .dieuhuong{
+    display: block;
+}  
+.dieuhuong div{
+    border-radius: .3rem;
+    background:black;
+}
+.dieuhuong div:last-child{
+    position: absolute;
+    left: 2300%;
+}
+
+.icon{
+    width: 890px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+   
+}
+.icon div{
+margin-top: 20px;
+    height: 4.5rem;
+    width: 4.5em; 
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background:orange;
+    color: rgb(99, 92, 92);
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;  
+    border: 1px solid orange;
+}
+.icon div:hover{
+    background:orange;
+    color: #eee;
+    border: 3px solid orange;
+    font-size: 2.5rem;
+    transition: all 0.3s;
+}
 
 /* Authen modal */
 .auth-form{
