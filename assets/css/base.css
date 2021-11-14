@@ -47,19 +47,13 @@ html{
     padding-right: 5px;
     width: 83.3334%;
 }
-/* Animation */
-@keyframes fadeIn {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 
-}
+
+
 /* App container */
 .app__container{
     background-color:  #f5f5f5;
+    padding-top: 40px;
 }
 .app__content{
     padding-top: 36px;
@@ -301,6 +295,16 @@ top: -1px;
     text-align: center;
 }
 
+/* Animation */
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
 
 @keyframes growth{
     from{
