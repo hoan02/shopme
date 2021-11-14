@@ -172,15 +172,15 @@
 /* Slide */
 .main{
     background-position: center;
-    background-image:url('./ảnh shop/back9.png') ;
-    height: 400px;
+    background-image:url('./assets/img/back9.png') ;
+    height: 450px;
 }
 .slide{
     width: 900px;
     margin: 0 auto;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 12px;
     border-radius: 10px;
 }
 .chuyen-slide{
@@ -189,13 +189,13 @@
 }
 .chuyen-slide img{
     width: 900px;
-    height: 400px;
+    height: 388px;
     float: left;
 }
 .dieuhuong {
     position:absolute;
     padding-left: 0px;
-    top: 30%;
+    top: 320px;
     display: none;
     font-size: 60px;
     color: #eee;
@@ -215,32 +215,35 @@
 }
 
 .icon-slider{
-    width: 890px;
+    width: 1800px;
     height: 50px;
     text-align: center;
     display: flex;
    
 }
 .icon-slider div{
-margin-top: 20px;
-    height: 4.5rem;
-    width: 4.5em; 
-    line-height: 4.5rem;
-    border-radius: .5rem;
+margin-top: 0;
+    height: 6rem;
+    width: 13rem; 
+    line-height: 2rem;
+    
     background: var(--primary-color);
-    color: rgb(99, 92, 92);
-    font-size: 2rem;
-    margin-left: .3rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    margin-left: .2rem;
     cursor: pointer;
     text-align: center;  
     border: 1px solid var(--primary-color);
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+    
 }
 .icon-slider div:hover{
-    background:var(--primary-color);
-    color: #eee;
-    border: 3px solid var(--primary-color);
-    font-size: 2.5rem;
-    transition: all 0.3s;
+   background:rgb(255, 51, 0);
+    font-size: 1.6rem;
+    border: 3px solid rgb(255, 51, 0);
+    transition: all 0.3s; 
 }
 
 
