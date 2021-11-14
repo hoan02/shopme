@@ -223,18 +223,18 @@ margin-top: 20px;
     width: 4.5em; 
     line-height: 4.5rem;
     border-radius: .5rem;
-    background:orange;
+    background: var(--primary-color);
     color: rgb(99, 92, 92);
     font-size: 2rem;
     margin-left: .3rem;
     cursor: pointer;
     text-align: center;  
-    border: 1px solid orange;
+    border: 1px solid var(--primary-color);
 }
 .icon div:hover{
-    background:orange;
+    background:var(--primary-color);
     color: #eee;
-    border: 3px solid orange;
+    border: 3px solid var(--primary-color);
     font-size: 2.5rem;
     transition: all 0.3s;
 }
