@@ -174,7 +174,6 @@
     background-position: center;
     background-image:url('./assets/img/back9.png') ;
     height: 450px;
-    width:
 }
 .slide{
     
@@ -258,7 +257,7 @@
     position: relative;
     text-decoration: none;
     border-radius: 2px ;
-   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) ;
+     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) ;
     transition: transform linear 0.1s;
     will-change: transform;
 }
@@ -315,7 +314,7 @@
     font-size: 1.4rem;
 
 }
-i.home-product-item__like-icon-fill{
+.home-product-item__like-icon-fill{
     display: none;
     color: #F63D30;
 }
@@ -424,7 +423,7 @@ i.home-product-item__like-icon-fill{
 
 /* Footer */
 .footer {
-    background: var(--primary-color);
+    background: #ee2929;
     color: #d3d3d3;
     height: 350px;
     position: relative;
