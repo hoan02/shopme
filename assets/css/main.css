@@ -229,7 +229,7 @@
     line-height: 2rem;
     background: var(--primary-color);
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
     text-align: center;  
     border: 1px solid var(--primary-color);
@@ -238,7 +238,7 @@
 }
 .icon-slider div:hover{
    background:rgb(255, 51, 0);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     border: 3px solid rgb(255, 51, 0);
     transition: all 0.3s; 
 }
