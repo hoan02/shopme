@@ -217,16 +217,16 @@
 }
 
 .icon-slider{
-    width: 1800px;
+    width: 100%;
     height: 50px;
     text-align: center;
     display: flex;
    
 }
 .icon-slider div{
-margin-top: 0;
-    height: 7rem;
-    width: 13rem; 
+    margin-top: 0;
+    height: 6rem;
+
     line-height: 2rem;
     background: var(--primary-color);
     color: #FFF;
@@ -234,7 +234,7 @@ margin-top: 0;
     cursor: pointer;
     text-align: center;  
     border: 1px solid var(--primary-color);
-    padding:20px 20px;
+    padding: 10px 19px;
     
 }
 .icon-slider div:hover{
@@ -257,7 +257,7 @@ margin-top: 0;
     position: relative;
     text-decoration: none;
     border-radius: 2px ;
-     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) ;
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) ;
     transition: transform linear 0.1s;
     will-change: transform;
 }
@@ -285,8 +285,7 @@ margin-top: 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    /* text-overflow: ellipsis;
-    white-space: nowrap; */
+
 }
 .home-product-item__price{
     display: flex;
@@ -315,7 +314,7 @@ margin-top: 0;
     font-size: 1.4rem;
 
 }
-.home-product-item__like-icon-fill{
+i.home-product-item__like-icon-fill{
     display: none;
     color: #F63D30;
 }
@@ -424,7 +423,7 @@ margin-top: 0;
 
 /* Footer */
 .footer {
-    background: #303036;
+    background: var(--primary-color);
     color: #d3d3d3;
     height: 350px;
     position: relative;
@@ -437,10 +436,16 @@ margin-top: 0;
     flex: 1;
     padding: 25px;
   }
+
+
+.footer-section a{
+    color: var(--white-color);
+}
+
 .footer .footer-content h1,
 .footer .footer-content h2 {
   color: white;
-  font-size: 30px;
+  font-size: 24px;
 }
 .footer .footer-content .about h1 span {
     color: #05f7ff;
@@ -484,7 +489,7 @@ margin-top: 0;
   }
   .footer .footer-content .contact-form .contact-input {
     width: 100%;
-    background: #272727;
+    background: var(--white-color);
     color: #bebdbd;
     margin-bottom: 7px;
     line-height: 1.1rem;
@@ -493,7 +498,7 @@ margin-top: 0;
     font-size: 1.4rem;
   }
   .footer .footer-content .contact-form .contact-input:focus {
-    background: #1a1a1a;
+    background: var(--white-color);
   }
   .footer .footer-content .contact-form .contact-btn {
     float: right;
@@ -503,7 +508,7 @@ margin-top: 0;
     color: white;
   }
   .footer .footer-bottom {
-    background: #343a40;
+    background: var(--boder-color);
     color: #686868;
     height: 50px;
     width: 100%;

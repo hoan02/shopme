@@ -48,16 +48,17 @@ html{
     width: 83.3334%;
 }
 
+/* Container */
 
 
 /* App container */
 .app__container{
     background-color:  #f5f5f5;
-    padding-top: 40px;
+    margin: 40px 0 0 170px;
+    
 }
 .app__content{
     padding-top: 36px;
-
     /* Category */
 }
 .category{
