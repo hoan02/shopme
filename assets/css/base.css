@@ -55,8 +55,7 @@ html{
 /* App container */
 .app__container{
     background-color:  #f5f5f5;
-    margin: 40px 0 0 170px;
-    
+    /* margin: 40px 0 0 170px;   */
 }
 .app__content{
     padding-top: 36px;

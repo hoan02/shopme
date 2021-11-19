@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel="stylesheet" href="./assets/css/reponsive.css">
         <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
@@ -133,19 +135,34 @@
                 <!-- End slide -->
 
                 <!-- Content -->
-                <div class="app__container"> 
-                    <div class="grid">
-                            <div class="grid__column-10">
-            <div class="home-filter">
+                <header>
+                    <ul class="header__sort-bar">
+                        <li class="header__sort-item">
+                            <a href="" class="header__sort-link">Liên quan</a>
+                        </li>
+                        <li class="header__sort-item header__sort-item--active">
+                            <a href="" class="header__sort-link">Mới nhất</a>
+                        </li>
+                        <li class="header__sort-item">
+                            <a href="" class="header__sort-link">Bán chạy</a>
+                        </li>
+                        <li class="header__sort-item">
+                            <a href="" class="header__sort-link">Giá</a>
+                        </li>  
+                    </ul> 
+                </header>
+            <div class="app__container"> 
+            <div class="grid wide">
+            <div class="row sm-gutter app__content ">
+            <div class="col l-12 m-12 c-12">
+            <div class="home-filter hide-on-mobile-tablet">
                 <span class="home-filter__label">Sắp xếp theo</span>
                 <button class="home-filter__btn btn">Phổ Biến</button>
                 <button class="home-filter__btn btn btn--primary">Mới Nhất</button>
                 <button class="home-filter__btn btn">Bán Chạy</button>
-        
-        
-                <div class="select-input">
-                    <span class="select-input__label">Giá</span>
-                    <i class="select-input__icon fas fa-angle-down" ></i>
+            <div class="select-input">
+                <span class="select-input__label">Giá</span>
+                <i class="select-input__icon fas fa-angle-down" ></i>
                     <ul class="select-input__list">
                         <li class="select-input__item">
                             <a href="" class="select-input__link">Giá: Thấp đến cao</a>
@@ -158,7 +175,7 @@
         
                 <div class="home-filter__page">
                     <span class="home-filter__page-num">
-                        <span class="home-filter__page-curent">1</span>/31
+                    <span class="home-filter__page-curent">1</span>/31
                     </span>
                     <div class="home-filter__page-control">
                         <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
@@ -174,10 +191,10 @@
                 </div>
         
             </div>
+            
             <div class="home-product">
-                <div class="grid__row">
-                    
-                    <div class="grid__column-2-4">
+                <div class="row sm-gutter ">
+                    <div class="col l-2-4 m-4 c-6 ">
                         <a class="home-product-item" href="#">
                             <div class="home-product-item__image" style="background-image: url(https://cdn.cellphones.com.vn/media/catalog/product/i/p/iphone_13-_pro-5_4.jpg);" ></div>
                             <h4 class="home-product-item__name">iPhone 13 Pro Max | Chính hãng VN/A</h4>
@@ -211,7 +228,7 @@
                         </a>
         
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                 <a class="home-product-item" href="#">
                                     <div class="home-product-item__image" style="background-image: url(https://cdn.cellphones.com.vn/media/catalog/product/i/p/iphone-12_2__3.jpg);" ></div>
                                     <h4 class="home-product-item__name">iPhone 12 I Chính hãng VN/A</h4>
@@ -249,7 +266,7 @@
                                 </a>
                 
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__image" style="background-image: url(https://cdn.cellphones.com.vn/media/catalog/product/o/p/oppo_reno6.jpg);" ></div>
                                             <h4 class="home-product-item__name">OPPO Reno6 Z 5G</h4>
@@ -284,7 +301,7 @@
                                         </a>
                         
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                                 <a class="home-product-item" href="#">
                                                     <div class="home-product-item__image" style="background-image: url(https://cdn.cellphones.com.vn/media/catalog/product/r/e/reno6-1_1.jpg);" ></div>
                                                     <h4 class="home-product-item__name">OPPO Reno6 5G</h4>
@@ -322,7 +339,7 @@
                                                 </a>
                                 
                             </div>
-                            <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                 <a class="home-product-item" href="#">
                                     <div class="home-product-item__image" style="background-image: url(https://cdn.cellphones.com.vn/media/catalog/product/x/i/xiaomi-mi-11t-pro-price-in-usa-500x500.jpg);" ></div>
                                     <h4 class="home-product-item__name">Xiaomi 11T Pro</h4>
@@ -356,7 +373,7 @@
                                 </a>
                 
                                     </div>
-                            <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__image" style="background-image: url(https://cdn.cellphones.com.vn/media/catalog/product/i/p/iphone-12_2__3.jpg);" ></div>
                                             <h4 class="home-product-item__name">Xiaomi 11T</h4>
@@ -394,9 +411,7 @@
                                         </a>
                         
                                     </div>
-                            
-                    
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/20fc03e25afcd3d327b28027126323e2_tn);" ></div>
                                             <h4 class="home-product-item__name">Tai nghe chụp tai Kanen IP952 Bass Nghe Siêu Phê, Chiến Mọi Loại Game 2906linh</h4>
@@ -433,7 +448,7 @@
                                         </a>
                         
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                 <a class="home-product-item" href="#">
                                     <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/f67e05bc1e5e6e2528b92fe9f36a4ebb_tn);" ></div>
                                     <h4 class="home-product-item__name">Laptop HP 340s G7 36A35PA i5-1035G1 8GB 512GB 14'' W10</h4>
@@ -470,7 +485,7 @@
                                 </a>
                 
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/5f48c7cafbbc91f16be1a2ed57807877_tn);" ></div>
                                             <h4 class="home-product-item__name">Tai nghe Razer Hammerhead Pro V2–In-Ear Headset - Hàng Chính Hãng - Bảo hành 24 tháng</h4>
@@ -507,7 +522,7 @@
                                         </a>
                         
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                                 <a class="home-product-item" href="#">
                                                     <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/4e21cac58b0d62014be04be24a373c69_tn);" ></div>
                                                     <h4 class="home-product-item__name">Laptop Asus Vivobook E210MA-GJ083T | N4020 | 4GB | 128GB EMMC | 11.6'' | Win10</h4>
@@ -544,7 +559,7 @@
                                                 </a>
                                 
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                                         <a class="home-product-item" href="#">
                                                             <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/c15bc39473bde547ccfac78d10c8e71d_tn);" ></div>
                                                             <h4 class="home-product-item__name">Bàn phím cơ Corsair K70 LUX Red Switch Led Red</h4>
@@ -581,7 +596,7 @@
                                                         </a>
                                         
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                 <a class="home-product-item" href="#">
                                     <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/350e463c1ffa4fde032388a6e762aad9_tn);" ></div>
                                     <h4 class="home-product-item__name">Đồng Hồ Samsung Galaxy Watch3 Bluetooth (45mm)</h4>
@@ -618,7 +633,7 @@
                                 </a>
                 
                             </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                                 <a class="home-product-item" href="#">
                                     <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/13139b669e77d4bf86368bd672bd9734_tn);" ></div>
                                     <h4 class="home-product-item__name">Đồng Hồ Samsung Galaxy Galaxy Watch4 Classic Bluetooth (46mm)</h4>
@@ -655,7 +670,7 @@
                                 </a>
                 
         </div>
-        <div class="grid__column-2-4">
+        <div class="col l-2-4 m-4 c-6 ">
             <a class="home-product-item" href="#">
                 <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/4e21cac58b0d62014be04be24a373c69_tn);" ></div>
                 <h4 class="home-product-item__name">Laptop Asus Vivobook E210MA-GJ083T | N4020 | 4GB | 128GB EMMC | 11.6'' | Win10</h4>
@@ -692,7 +707,7 @@
             </a>
         
         </div>
-        <div class="grid__column-2-4">
+        <div class="col l-2-4 m-4 c-6 ">
             <a class="home-product-item" href="#">
                 <div class="home-product-item__image" style="background-image: url(https://cf.shopee.vn/file/a24fcdd0ba2f86776f238a6a510dea14_tn);" ></div>
                 <h4 class="home-product-item__name">Chuột không dây GOOJODOQ Bluetooth 2.4Ghz 2 trong 1 chất lượng cao)</h4>
@@ -780,7 +795,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>    
+            </div> 
+                    </div>
+                       
         
                     </div>
                     </div>
