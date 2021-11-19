@@ -14,18 +14,17 @@ html{
 
 .sub-logo{
     height: 120px;
-   
 }
 
 .sub-logo-img{
     height: 100px;
-    margin: 10px 20px;
+    margin: 15px 20px;
 }
 
 .header-right{
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 0;
+    right: 0;
 }
 
 .hotline{
@@ -36,7 +35,7 @@ html{
 
 .sub-container{
     margin: auto;
-    width: 70%;
+    width: 80%;
     height: 2000px;
     text-align: center;
 
