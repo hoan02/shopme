@@ -579,7 +579,8 @@
 .footer .footer-content h1,
 .footer .footer-content h2 {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.1;
 }
 .footer .footer-content .about h1 span {
     color: #05f7ff;
